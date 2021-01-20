@@ -1,0 +1,40 @@
+#include<iostream>
+using namespace std;
+
+void solve()
+{
+  int n;
+  cin >> n;
+  string b;
+  cin >> b;
+  string a = "1";
+  for(int i=1;i<n;i++)
+  {
+    if('1'+ b[i] != a[i-1] + b[i-1] )
+    {
+      a += '1';
+    }
+    else 
+    {
+      a += '0';
+    }
+  }
+  cout << a;
+}
+int main()
+{
+  int T;
+  cin >> T;
+  while(T--)
+  {
+    solve();
+    printf("\n");
+  }
+  return 0;
+}
+
+LEARNINGS - 
+1. Do try first string questions with concatenation.
+2. I got to know how to separate all the digits of an integer.
+3. Dont go in a complicated way first try easy one solution.
+4. Always think of the edge cases.
